@@ -1,0 +1,13 @@
+# Environments
+backend/.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+#Python venv
+.myVenv/*
+
+backedn/__pycache__
