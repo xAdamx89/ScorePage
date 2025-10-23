@@ -17,7 +17,6 @@ conn_str = "dbname=zsl user=adam password=9089 host=db port=5432"
 
 root_conn_str = "dbname=zsl user=postgres password=9089 host=db port=5432"
 
-
 @app.get("/")
 def test():
     return {"Kontener FastAPI": "Działa"}
