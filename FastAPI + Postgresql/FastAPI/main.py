@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-conn_str = "dbname=zsl user=adam password=adam host=db port=5432"
+conn_str = "dbname=zsl user=adam password=9089 host=db port=5432"
 
 root_conn_str = "dbname=zsl user=postgres password=9089 host=db port=5432"
 
