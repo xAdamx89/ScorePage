@@ -11,3 +11,55 @@ venv.bak/
 .myVenv/*
 
 backedn/__pycache__
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.cache/
+*.log
+*.sqlite3
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+
+# Poetry
+poetry.lock
+
+# Docker
+*.env
+docker-compose.override.yml
+*.log
+
+# PostgreSQL
+pgdata/
+*.sql
+*.dump
+
+# IDE / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.DS_Store
+
+# Node / frontend
+node_modules/
+dist/
+build/
+*.map
+
+# Logs
+*.log
+
+poetry.lock
+pyproject.toml

@@ -1,0 +1,486 @@
+ID_wpisu,Klasa_ucznia,Numer_ucznia,Uzyskane_punkty,Opis zadania,Data_wpisu,Mozliwe_pkt_do_uzyskania,Przedmiot
+0,5g,3,3,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+2,5g,12,3,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+3,5g,1,3,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+4,5g,29,4,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+5,5g,24,3,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+6,5g,19,3,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+7,5g,21,4,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+8,5g,16,4,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+9,5g,25,4,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+10,5g,20,3,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+11,5g,9,4,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+13,5g,22,4,Pierwsze zadanie z Lua,8.09.2025,4,Azr
+14,4g,2,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+15,4g,3,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+16,4g,4,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+17,4g,10,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+18,4g,11,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+19,4g,12,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+20,4g,13,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+21,4g,16,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+22,4g,17,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+23,4g,21,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+24,4g,29,1,Wprowadzenie w Motosim,8.09.2025,1,PiER
+25,5g,1,4,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+26,5g,12,4,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+27,5g,22,4,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+28,5g,9,4,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+29,5g,25,6,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+30,5g,3,6,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+31,5g,20,5,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+32,5g,16,6,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+33,5g,19,6,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+34,5g,21,6,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+35,5g,29,4,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+36,5g,4,6,Ćwiczenie manualne - zaciskanie,10.09.2025,6,PiER
+37,3g,25,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiEP
+38,3g,24,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiEP
+39,3g,30,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+40,3g,14,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+41,3g,16,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+42,3g,10,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+43,3g,3,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+44,3g,23,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+45,3g,7,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+46,3g,4,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+47,3g,6,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+48,3g,20,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+49,3g,12,3,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+50,3g,13,2,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+51,3g,19,2,Tinkercad Arduino - pierwszy program,10.09.2025,3,PPiER
+52,5g,28,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+53,5g,14,4,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+54,5g,13,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+55,5g,2,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+56,5g,26,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+57,5g,15,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+58,5g,8,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+59,5g,10,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+60,5g,18,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+61,5g,6,3,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+62,5g,7,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+63,5g,17,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+64,5g,11,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+65,5g,5,6,Ćwiczenie manualne - zaciskanie,11.09.2025,6,PiER
+66,5g,25,6,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+67,5g,19,15,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+68,5g,24,3,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+69,5g,20,3,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+70,5g,4,3,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+71,5g,12,3,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+72,5g,1,3,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+73,5g,16,10,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+74,5g,29,3,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+75,5g,9,8,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+76,5g,3,9,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+77,5g,21,9,Ćwiczenie nr 2 z języka Lua - z prezentacji trzy ćwiczenia,15.09.2025,15,Azr
+78,5g,19,2,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+79,5g,16,2,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+80,5g,29,2,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+82,5g,21,0,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+83,5g,20,4,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+84,5g,12,2,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+86,5g,25,6,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+88,5g,9,4,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+89,5g,4,4,Pierwsze programowanie Dobota Nova2 z Lua,17.09.2025,4,PiER
+91,3g,30,1,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+92,3g,7,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+93,3g,24,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+94,3g,25,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+95,3g,10,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+96,3g,4,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+97,3g,20,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+98,3g,12,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,19.09.2025,3,PiER
+99,4g,9,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.09.2025,4,Azr
+100,4g,3,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.09.2025,4,Azr
+101,4g,11,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.09.2025,4,Azr
+102,4g,19,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.09.2025,4,Azr
+103,4g,21,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.09.2025,4,Azr
+104,4g,2,2,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.09.2025,4,Azr
+105,5g,5,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+106,5g,7,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+107,5g,13,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+108,5g,2,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+109,5g,23,2,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+110,5g,15,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+111,5g,27,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+112,5g,14,4,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+113,5g,10,6,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+114,5g,26,5,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+115,5g,6,6,Pierwsze zadanie z Lua,18.09.2025,6,PiER
+116,5g,11,2,Pierwsze zadanie z Lua,18.09.2025,4,PiER
+117,5g,17,4,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+118,5g,7,4,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+119,5g,23,4,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+120,5g,26,4,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+121,5g,11,6,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+122,5g,5,6,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+123,5g,6,6,Zapisywanie i wgrywanie z flash,22.09.2025,4,Azr
+124,5g,15,6,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+125,5g,18,6,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+126,5g,13,6,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+127,5g,2,6,Drugie ćwiczenie programowania Dobota - ćwiczenie paletyzacji,22.09.2025,4,Azr
+128,4g,19,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+129,4g,21,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+130,4g,11,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+131,4g,3,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+132,4g,4,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+133,4g,9,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+134,4g,12,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+135,4g,13,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+136,4g,16,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+137,4g,17,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+138,4g,29,2,Zapisywanie i wgrywanie z flash,22.09.2025,2,PiER
+139,4g,10,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+140,4g,21,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+141,4g,2,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+142,4g,12,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+143,4g,19,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+144,4g,29,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+145,4g,4,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+146,4g,3,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+147,4g,16,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+148,4g,11,2,Rysowanie schematu ele I/O kontrolera,11.09.2025,2,PPiEP
+149,4g,9,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+150,4g,29,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+151,4g,12,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+152,4g,16,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+153,4g,3,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+154,4g,11,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+155,4g,19,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+156,4g,21,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+157,4g,2,2,Rysowanie schematów elektrycznych do schematu ster IO robota,18.09.2025,2,PPiEP
+158,4g,4,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,19.05.2025,4,Azr
+159,4g,16,4,Pierwsze zajęcia z MotoSim - tworzenie modeli,12.09.2025,4,Azr
+160,4g,12,4,Pierwsze zajęcia z MotoSim - tworzenie modeli,12.09.2025,4,Azr
+161,5g,21,4,Drugie ćw Dobot paletyzacja z forami itd,24.09.2025,4,PiER
+162,5g,25,4,Drugie ćw Dobot paletyzacja z forami itd,24.09.2025,4,PiER
+163,5g,22,4,Drugie ćw Dobot paletyzacja z forami itd,24.09.2025,4,PiER
+164,5g,9,6,Drugie ćw Dobot paletyzacja z forami itd,24.09.2025,4,PiER
+165,5g,8,6,Pierwsze zadanie z Lua,24.09.2025,4,PiER
+166,5g,18,6,Pierwsze zadanie z Lua,24.09.2025,4,PiER
+167,5g,24,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+168,5g,1,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+169,5g,20,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+170,5g,4,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+171,3g,14,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,24.09.2025,3,PiER
+172,3g,7,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,24.09.2025,3,PiER
+173,3g,4,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+174,3g,12,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+175,3g,20,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+176,3g,14,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+177,3g,7,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+178,3g,23,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+179,3g,16,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+180,3g,10,3,Tinkercad - pierwsze zad świecenie diodą,10.09.2025,3,PPiEP
+181,5g,15,4,Utrwalenie prog palety Dobot Nova 2,25.09.2025,4,PiER
+182,5g,28,4,Utrwalenie prog palety Dobot Nova 2,25.09.2025,4,PiER
+183,5g,11,4,Utrwalenie prog palety Dobot Nova 2,25.09.2025,4,PiER
+184,5g,5,4,Utrwalenie prog palety Dobot Nova 2,25.09.2025,4,PiER
+185,5g,19,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+186,5g,29,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+187,5g,16,0,Drugie prog skrypt Dobot - palet zaaw,24.09.2025,4,PiER
+188,3g,10,4,Sekwencyjne programowanie Arduino,24.09.2025,4,PPiEP
+190,3g,12,4,Sekwencyjne programowanie Arduino,24.09.2025,4,PPiEP
+191,3g,24,4,Sekwencyjne programowanie Arduino,24.09.2025,4,PPiEP
+192,3g,25,4,Sekwencyjne programowanie Arduino,24.09.2025,4,PPiEP
+193,5g,8,4,Utrwalenie prog palety Dobot Nova 2,25.09.2024,4,PiER
+194,5g,10,4,Utrwalenie prog palety Dobot Nova 2,25.09.2024,4,PiER
+195,5g,26,4,Utrwalenie prog palety Dobot Nova 2,25.09.2024,4,PiER
+196,5g,18,4,Utrwalenie prog palety Dobot Nova 2,25.09.2024,4,PiER
+197,4g,11,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+198,4g,21,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+199,4g,2,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+200,4g,29,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+201,4g,16,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+202,4g,3,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+203,4g,4,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+204,4g,12,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+205,4g,13,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+206,4g,9,2,FestoFluidSim - nauka FBD nie sekwencyjne,25.09.2024,2,PPiEP
+208,3g,30,4,Sekwencyjne programowanie Arduino,26.09.2025,4,PPiEP
+209,3g,23,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,26.09.2025,3,PiER
+210,3g,23,4,Sekwencyjne programowanie Arduino,26.09.2025,4,PPiEP
+211,3g,16,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,26.09.2025,3,PiER
+212,3g,16,4,Sekwencyjne programowanie Arduino,26.09.2025,4,PPiEP
+213,3g,14,4,Sekwencyjne programowanie Arduino,26.09.2025,4,PPiEP
+214,3g,14,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,26.09.2025,3,PiER
+215,3g,7,4,Sekwencyjne programowanie Arduino,26.09.2025,4,PPiEP
+216,3g,30,4,Sekwencyjne prog v2 - Tinkercad,26.09.2025,4,PiER
+217,3g,24,4,Sekwencyjne prog v2 - Tinkercad,26.09.2025,4,PiER
+218,3g,25,4,Sekwencyjne prog v2 - Tinkercad,26.09.2025,4,PiER
+219,3g,30,3,Tinkercad Arduino - pierwszy program,26.09.2025,3,PPiEP
+220,4g,9,6,Paletyzacja - na dwa bloki,26.09.2025,6,Azr
+221,4g,2,6,Paletyzacja - na dwa bloki,26.09.2025,6,Azr
+222,4g,19,6,Paletyzacja - na dwa bloki,26.09.2025,6,Azr
+223,4g,21,6,Paletyzacja - na dwa bloki,26.09.2025,6,Azr
+224,5g,7,4,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+225,5g,23,4,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+226,5g,17,4,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+227,5g,7,4,Prog jawnego zadania ELM.08,29.09.2025,4,Azr
+228,5g,17,4,Prog jawnego zadania ELM.08,29.09.2025,4,Azr
+229,5g,23,4,Prog jawnego zadania ELM.08,29.09.2025,4,Azr
+230,5g,6,4,Prog jawnego zadania ELM.08,29.09.2025,4,Azr
+231,5g,6,4,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+232,5g,15,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+233,5g,28,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+234,5g,11,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+235,5g,5,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+236,5g,18,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+237,5g,10,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+238,5g,8,6,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+239,5g,2,4,Drugie prog skrypt Dobot - palet zaaw,29.09.2025,4,PiER
+240,4g,11,6,Wizualizacja paletyzacji Motosim,29.09.2025,6,Azr
+241,4g,3,6,Wizualizacja paletyzacji Motosim,29.09.2025,6,Azr
+242,4g,4,6,Wizualizacja paletyzacji Motosim,29.09.2025,6,Azr
+243,4g,29,6,Wizualizacja paletyzacji Motosim,29.09.2025,6,Azr
+244,4g,13,6,Wizualizacja paletyzacji Motosim,29.09.2025,6,Azr
+245,4g,3,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+246,4g,4,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+247,4g,27,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+248,4g,19,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+249,4g,18,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+250,4g,20,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+251,4g,8,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+252,4g,6,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+253,4g,25,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+254,4g,21,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+255,4g,28,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+256,4g,7,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+257,4g,12,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+258,4g,14,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+259,4g,29,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+260,4g,11,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+261,4g,23,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+263,4g,13,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+264,4g,24,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+265,4g,26,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+266,4g,2,1,Zeszyt 1 - do 3 wykładu,1.10.2025,1,ProgRob
+267,5g,22,6,Pierwsze zadanie z Lua,1.10.2025,4,PiER
+268,5g,3,6,Pierwsze zadanie z Lua,1.10.2025,4,PiER
+269,5g,3,4,Prog pierwszego zadania jawanego ELM08,1.10.2025,4,PiER
+270,5g,9,4,Prog pierwszego zadania jawanego ELM08,1.10.2025,4,PiER
+271,5g,21,4,Prog pierwszego zadania jawanego ELM08,1.10.2025,4,PiER
+272,5g,25,4,Prog pierwszego zadania jawanego ELM08,1.10.2025,4,PiER
+273,3g,4,3,Sekwencyjne prog v2 - Tinkercad,1.10.2025,3,PiER
+274,3g,6,1,Sekwencyjne prog v2 - Tinkercad,1.10.2025,3,PiER
+275,3g,10,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,1.10.2025,3,PiER
+276,3g,16,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,1.10.2025,3,PiER
+277,3g,23,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,1.10.2025,3,PiER
+278,3g,3,3,Ćwiczenie w tinkercad -> start wysoki stop niski i 5 diod gdy stop to zatrzymuje swiecenie,1.10.2025,3,PiER
+279,3g,3,4,Sekwencyjne prog v2 - Tinkercad,1.10.2025,4,PiER
+280,3g,3,4,Sekwencyjne programowanie Arduino,1.10.2025,4,PPiEP
+281,3g,3,3,Tinkercad - pierwsze zad świecenie diodą,1.10.2025,3,PPiEP
+282,3g,24,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+283,3g,25,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+284,3g,20,4,Sekwencyjne programowanie Arduino,1.10.2025,4,PPiEP
+285,3g,21,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+286,3g,7,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+287,3g,8,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+288,3g,14,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+289,3g,3,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+290,3g,30,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+291,,16,4,,,,
+292,,10,4,,,,
+293,,23,4,,,,
+294,3g,23,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+295,3g,10,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+296,3g,16,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+297,3g,26,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+298,3g,19,4,Jawne ELM.07 Tinkercad,1.10.2025,4,PPiEP
+301,4g,3,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+302,4g,4,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+303,4g,10,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+304,4g,11,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+305,4g,13,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+306,4g,16,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+307,4g,29,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+308,4g,19,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+309,4g,21,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+310,4g,2,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+311,4g,12,4,FestoFluidSim - nauka FBD programy sekwencyjne,3.10.2025,4,PPiEP
+312,4g,29,4,Motosim - Tworzenie wizualizacji przenoszenia bloczka,2.10.2025,4,Azr
+313,4g,29,6,Paletyzacja - na dwa bloki,2.10.2025,6,Azr
+314,4g,19,6,Wizualizacja paletyzacji Motosim,2.10.2025,6,Azr
+315,4g,19,1,Wprowadzenie w Motosim,2.10.2025,1,PiER
+316,3g,12,4,Jawne ELM.07 Tinkercad,3.10.2025,4,PPiEP
+317,3g,20,4,Jawne ELM.07 Tinkercad,3.10.2025,4,PPiEP
+318,3g,24,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+319,3g,25,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+320,3g,3,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+321,3g,12,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+322,3g,20,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+323,3g,6,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+324,3g,4,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+325,3g,26,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+326,3g,19,4,Jawne ELM.07 Silnik Tinkercad,3.10.2025,4,PiER
+327,4g,16,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+328,4g,13,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+329,4g,12,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+330,4g,11,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+331,4g,29,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+332,4g,17,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+333,4g,3,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+334,4g,4,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+335,4g,12,4,Pierwsze spawanie Motosim,3.10.2025,4,PiER
+336,4g,13,4,Pierwsze spawanie Motosim,3.10.2025,4,PiER
+337,4g,16,4,Pierwsze spawanie Motosim,3.10.2025,4,PiER
+338,4g,2,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+339,4g,19,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+340,4g,21,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+341,4g,10,4,Pierwsze spawanie Motosim,3.10.2025,4,PiER
+342,1g,31,1,Zeszyt 1,3.10.2025,1,PRob
+343,1g,1,1,Zeszyt 1,3.10.2025,1,PRob
+344,1g,8,1,Zeszyt 1,3.10.2025,1,PRob
+345,1g,21,1,Zeszyt 1,3.10.2025,1,PRob
+346,1g,25,1,Zeszyt 1,3.10.2025,1,PRob
+347,1g,11,0,Zeszyt 1,3.10.2025,1,PRob
+348,1g,26,1,Zeszyt 1,3.10.2025,1,PRob
+349,1g,27,1,Zeszyt 1,3.10.2025,1,PRob
+350,1g,20,1,Zeszyt 1,3.10.2025,1,PRob
+351,1g,3,1,Zeszyt 1,3.10.2025,1,PRob
+352,1g,29,1,Zeszyt 1,3.10.2025,1,PRob
+353,1g,7,1,Zeszyt 1,3.10.2025,1,PRob
+354,1g,5,1,Zeszyt 1,3.10.2025,1,PRob
+355,1g,16,1,Zeszyt 1,3.10.2025,1,PRob
+356,1g,28,1,Zeszyt 1,3.10.2025,1,PRob
+357,1g,23,1,Zeszyt 1,3.10.2025,1,PRob
+358,1g,22,1,Zeszyt 1,3.10.2025,1,PRob
+359,1g,13,1,Zeszyt 1,3.10.2025,1,PRob
+360,1g,18,1,Zeszyt 1,3.10.2025,1,PRob
+361,1g,6,1,Zeszyt 1,3.10.2025,1,PRob
+362,1g,15,1,Zeszyt 1,3.10.2025,1,PRob
+363,1g,24,1,Zeszyt 1,3.10.2025,1,PRob
+364,1g,12,1,Zeszyt 1,3.10.2025,1,PRob
+365,1g,17,1,Zeszyt 1,3.10.2025,1,PRob
+366,4g,10,2,Save backup z robota Yaskawy,3.10.2025,2,PiER
+367,5g,21,4,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+368,5g,25,4,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+369,5g,3,4,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+370,5g,22,5,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+371,5g,9,5,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+372,5g,19,3,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+373,5g,16,3,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+374,5g,29,3,ELM.08 taśmociąg - cały program,6.10.2025,4,Azr
+375,4g,19,6,Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+376,4g,2,6,Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+377,4g,21,6,Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+378,4g,11,6,Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+379,4g,12,6,?Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+380,4g,13,6,?Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+381,4g,16,6,?Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+382,,19,,,,,
+383,,21,,,,,
+384,,2,,,,,
+385,4g,19,4,Pierwsze spawanie Motosim,6.10.2025,4,PiER
+386,4g,21,4,Pierwsze spawanie Motosim,6.10.2025,4,PiER
+387,4g,2,4,Pierwsze spawanie Motosim,6.10.2025,4,PiER
+388,4g,29,6,Układy wspólrzędnych robota - w tym użytkownika i cylindryczny,6.10.2025,6,PiER
+389,4g,16,1,Zeszyt 1 - do 3 wykładu,8.10.2025,1,ProgRob
+390,4g,5,1,Zeszyt 1 - do 3 wykładu,8.10.2025,1,ProgRob
+391,5g,24,4,Pierwsze programowanie Dobota Nova2 z Lua,8.10.2025,4,PiER
+392,5g,24,6,Pierwsze zadanie z Lua,8.10.2025,6,PiER
+393,5g,1,4,Pierwsze programowanie Dobota Nova2 z Lua,8.10.2025,4,PiER
+394,5g,1,6,Pierwsze zadanie z Lua,8.10.2025,6,PiER
+395,5g,20,6,Pierwsze zadanie z Lua,8.10.2025,6,PiER
+396,2g,12,3,,8.10.2025,6,PiER
+397,5g,21,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+398,5g,25,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+399,5g,3,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+400,5g,22,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+401,5g,9,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+402,5g,19,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+403,5g,16,4,ELM.08 - trzeci link,8.10.2025,4,PiER
+404,4g,21,19,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+405,4g,18,9,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+406,4g,16,20,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+407,4g,14,14,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+408,4g,8,20,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+409,4g,15,19,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+410,4g,12,21,Kart 1 -> znajomość techpendanta i okienka stanu,8.10.2025,23,ProgRob
+412,5g,24,4,Prog pierwszego jawnego zadania ELM.08,8.10.2025,4,Azr
+413,5g,12,4,Prog pierwszego jawnego zadania ELM.08,8.10.2025,4,Azr
+414,5g,1,4,Prog pierwszego jawnego zadania ELM.08,8.10.2025,4,Azr
+415,5g,20,4,Prog pierwszego jawnego zadania ELM.08,8.10.2025,4,
+416,3g,30,4,Jawne ELM.07 Tinkercad,8.10.2025,4,PPiEP
+417,4g,29,19,Kart 1 -> znajomość techpendanta i okienka stanu,9.10.2025,23,ProgRob
+418,4g,27,21,Kart 1 -> znajomość techpendanta i okienka stanu,9.10.2025,23,ProgRob
+419,4g,6,19,Kart 1 -> znajomość techpendanta i okienka stanu,9.10.2025,23,ProgRob
+420,4g,13,15,Kart 1 -> znajomość techpendanta i okienka stanu,9.10.2025,23,ProgRob
+421,4g,10,23,Kart 1 -> znajomość techpendanta i okienka stanu,9.10.2025,23,ProgRob
+422,4g,26,18,Kart 1 -> znajomość techpendanta i okienka stanu,9.10.2025,23,ProgRob
+425,4g,11,4,Zaliczenie FBD trzecie zadanie sekwencyjne,9.10.2025,4,PPiEP
+427,4g,29,4,Zaliczenie FBD trzecie zadanie sekwencyjne,9.10.2025,4,PPiEP
+428,4g,11,4,Pierwsze spawanie Motosim,9.10.2025,4,PiER
+429,3g,24,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+430,3g,25,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+431,3g,4,4,Jawne ELM.07 Tinkercad,10.10.2025,4,PPiEP
+432,3g,6,4,Jawne ELM.07 Tinkercad,10.10.2025,4,PPiEP
+433,3g,3,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+434,3g,6,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+435,3g,4,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+436,3g,10,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+437,3g,12,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+438,3g,20,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+439,3g,23,3,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+440,3g,7,3,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+441,3g,26,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+442,3g,19,4,FFS -> pneumatyka z UiSM cz1,10.10.2025,4,PPiEP
+443,3g,6,4,Sekwencyjne programowanie Arduino,10.10.2025,4,PPiEP
+444,4g,13,6,Paletyzacja - na dwa bloki,10.10.2025,6,Azr
+445,4g,12,6,Wizualizacja paletyzacji Motosim,10.10.2025,6,Azr
+446,4g,12,6,Paletyzacja - na dwa bloki,10.10.2025,6,Azr
+447,4g,11,6,Motosim - Tworzenie wizualizacji przenoszenia bloczka,10.10.2025,6,Azr
+449,4g,10,4,Zaliczenie FBD trzecie zadanie sekwencyjne,10.10.2025,4,PPiEP
+450,4g,21,4,Zaliczenie FBD trzecie zadanie sekwencyjne,10.10.2025,4,PPiEP
+451,4g,12,4,Zaliczenie FBD trzecie zadanie sekwencyjne,10.10.2025,4,PPiEP
+452,4g,3,4,Pierwsze spawanie Motosim,10.10.2025,4,PiER
+453,4g,4,4,Pierwsze spawanie Motosim,10.10.2025,4,PiER
+454,4g,10,4,FestoFluidSim - nauka FBD nie sekwencyjne,10.10.2025,4,PPiEP
+455,4g,29,4,Pierwsze spawanie Motosim,10.10.2025,4,PiER
+456,4g,13,4,FestoFluidSim - nauka FBD nie sekwencyjne,10.10.2025,4,PPiEP
+457,4g,24,12,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+458,5g,21,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+459,5g,25,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+460,5g,9,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+461,5g,22,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+462,5g,3,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+463,5g,19,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+464,5g,16,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+465,5g,4,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+466,5g,1,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+467,5g,12,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+468,4g,20,23,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+469,4g,23,19,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+470,4g,25,22,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+471,4g,2,13,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+472,4g,7,18,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+473,4g,28,16,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+474,4g,5,12,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+475,4g,11,20,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+476,4g,19,19,Kart 1 -> znajomość techpendanta i okienka stanu,20.10.2025,23,ProgRob
+477,5g,29,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+478,5g,20,4,Czwarty egzamin jawny ELM.08,20.10.2025,4,Azr
+479,4g,11,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+480,,,,Baddanie PL oraz system wykjrywania kolizji na robocie,,,
+482,4g,4,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+483,4g,3,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+484,4g,10,6,Motosim - Tworzenie wizualizacji przenoszenia bloczka,20.10.2025,6,Azr
+485,4g,10,4,Wizualizacja paletyzacji Motosim,20.10.2025,4,Azr
+486,4g,10,6,Paletyzacja - na dwa bloki,20.10.2025,6,Azr
+487,4g,12,,,,,
+488,4g,13,,,,,
+489,4g,16,,,,,
+490,4g,13,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+491,4g,12,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+492,4g,16,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+493,4g,9,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+494,4g,19,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+495,4g,21,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+496,4g,2,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+497,,,,,,,
+498,4g,29,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+499,4g,17,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
+500,,,,,,,
+501,4g,10,4,Baddanie PL oraz system wykjrywania kolizji na robocie,20.10.2025,4,PiER
