@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie do formularza</title>
+</head>
+<body style="text-align: center;">
+    <h1>Podaj hasło</h1>
+    <form id="loginForm">
+        <input id="haslo" type="text" placeholder="Wpisz hasło" style="margin-bottom: 2%;"><br>
+        <input type="submit" value="Zaloguj">
+        <input type="button" value="Powrót" onclick="window.location.href='index.html'">
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", async (e) => {
+            e.preventDefault(); // zapobiega przeładowaniu strony
+
+            const haslo = document.getElementById("haslo").value.trim();
+
+            if (!haslo) {
+                alert("Podaj hasło!");
+                return;
+            }
+
+            try {
+                const response = await fetch(`http://localhost:8000/formularz/${haslo}`);
+                const data = await response.json();
+
+                if (data.Czy_prawidłowe === "Tak") {
+                    // ✅ Hasło poprawne – przekierowanie
+                    window.location.href = "formularz.html";
+                } else {
+                    // ❌ Hasło niepoprawne
+                    alert("Nieprawidłowe hasło!");
+                }
+            } catch (error) {
+                console.error("Błąd:", error);
+                alert("Nie udało się połączyć z serwerem.");
+            }
+        });
+    </script>
+</body>
+</html>

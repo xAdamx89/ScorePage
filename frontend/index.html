@@ -1,18 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wyniki punktów</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
 </head>
 <body>
-    <h2>Sprawdź swoje punnkty</h2>
+    <button type="button" onclick="window.location.href='logowanie.html'">
+        Zaloguj do formularza
+    </button>
+    <h2 style="text-align:center;">Punkty uzyskane na zajeciach</h2><br>
+    <h3>Proszę zaznaczyć następujące parametry:</h3>
+    <form id="formularz">
+        <table>
+            <tr>
+                <th>klasa</th>
+                <th>Przedmiot</th>
+                <th>Numer w dzienniku</th>
+            </tr>
+                <td>
+                    <input type="radio" id="klasa1" name="klasa" value="1g">
+                    <label for="klasa1">1g</label><br>
 
-    <p id="test">To jest paragraf testowy</p>
+                    <input type="radio" id="klasa2" name="klasa" value="2g">
+                    <label for="klasa2">2g</label><br>
 
-    <button type="button" onclick="mojaFunkcja()">Wciśnij mnie!</button>
+                    <input type="radio" id="klasa3" name="klasa" value="3g">
+                    <label for="klasa3">3g</label><br>
 
+                    <input type="radio" id="klasa4" name="klasa" value="4g">
+                    <label for="klasa4">4g</label><br>
+
+                    <input type="radio" id="klasa5" name="klasa" value="5g">
+                    <label for="klasa5">5g</label><br>
+                </td>
+
+                <td style="text-align:left">
+                    <input type="radio" id="przedmiot1" name="przedmiot" value="Azr">
+                    <label for="przedmiot1">Azr - Aplikacje zrobotyzowane</label><br>
+
+                    <input type="radio" id="przedmiot2" name="przedmiot" value="PiER">
+                    <label for="przedmiot2">PiER - Programowanie i eksploatacja robotów</label><br>
+
+                    <input type="radio" id="przedmiot3" name="przedmiot" value="PPiEP">
+                    <label for="przedmiot3">PPiEP - Prac. pneum. i elepnem.</label><br>
+
+                    <input type="radio" id="przedmiot4" name="przedmiot" value="ProgRob">
+                    <label for="przedmiot4">ProgRob - Programowanie robotów</label><br>
+
+                    <input type="radio" id="przedmiot5" name="przedmiot" value="PRob">
+                    <label for="przedmiot5">PRob - Podstawy robotyki</label><br>
+                </td>
+                <td>
+                    <input type="number" id="Numer" name="Numer" min="1" max="31" step="1" value="1">
+                </td>
+        </table>
+        <input type="submit" value="Sprawdź punkty">
+    </form>
+    <table id="tabela">
+        <thead>
+            <tr id="naglowki"></tr>
+        </thead>
+        <tbody id="wiersze"></tbody>
+    </table>
     <script src="js/main.js"></script>
 </body>
 </html>
-acz 
