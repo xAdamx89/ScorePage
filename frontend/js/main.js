@@ -67,3 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+window.addEventListener("load", () => {
+  fetch("https://fastapi.adam-mazurek.pl/api/visit", { method: "POST" })
+    .catch(err => console.warn("Błąd zapisu wizyty:", err));
+});
