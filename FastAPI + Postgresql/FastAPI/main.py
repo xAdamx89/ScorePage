@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 import psycopg
 from pydantic import BaseModel
@@ -127,3 +127,17 @@ def dodaj_wpis(wpis: WpisPunktow):
 @app.get("/formularz/{haslo}")
 def sprawdz_haslo(haslo: str):
     return {"Czy_prawidłowe": "Tak"} if haslo == "9089" else {"Czy_prawidłowe": "Nie"}
+
+@app.post("/api/visit")
+async def record_visit(request: Request):
+    ip = request.client.host
+    ua = request.headers.get("user-agent", "unknown")
+
+    conn = psycopg.connect(conn_str)
+    cur = conn.cursor()
+    cur.execute("INSERT INTO visits (ip_address, user_agent, visit_time) VALUES (%s, %s, %s)", (ip, ua, datetime.now()))
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    return {"message": "Visit recorded"}
