@@ -10,29 +10,51 @@
     </style>
 </head>
 <body>
-     <input type="button" value="Powrót" onclick="window.location.href='index.html'">
-    <h1>Dodaj nowy wpis punktów</h1>
-    <form id="wpisForm">
-        <label for="klasa_ucznia">Klasa ucznia:</label>
-        <input type="text" id="klasa_ucznia" name="klasa_ucznia" required><br><br>
+<input type="button" value="Powrót" onclick="window.location.href='index.html'">
+    <table>
+        <tr>
+            <th>Dodaj wpis      </th>
+            <th>Usun wpis       </th>
+            <th>Zmodyfikuj wpis </th>
+        </tr>
+        <tr>
+            <td>
+                <form id="InsertForm">
+                    <label for="klasa_ucznia">Klasa ucznia:</label>
+                    <input type="text" id="klasa_ucznia" name="klasa_ucznia" ><br><br>
 
-        <label for="numer_ucznia">Numer ucznia:</label>
-        <input type="number" id="numer_ucznia" name="numer_ucznia" required><br><br>
+                    <label for="numer_ucznia">Numer ucznia:</label>
+                    <input type="number" id="numer_ucznia" name="numer_ucznia" ><br><br>
 
-        <label for="uzyskane_punkty">Uzyskane punkty:</label>
-        <input type="number" id="uzyskane_punkty" name="uzyskane_punkty" required><br><br>
+                    <label for="uzyskane_punkty">Uzyskane punkty:</label>
+                    <input type="number" id="uzyskane_punkty" name="uzyskane_punkty" ><br><br>
 
-        <label for="opis_zadania">Opis zadania:</label><br>
-        <textarea id="opis_zadania" name="opis_zadania" rows="3" cols="50" required></textarea><br><br>
+                    <label for="opis_zadania">Opis zadania:</label><br>
+                    <textarea id="opis_zadania" name="opis_zadania" rows="3" cols="50" ></textarea><br><br>
 
-        <label for="mozliwe_pkt_do_uzyskania">Możliwe punkty do uzyskania:</label>
-        <input type="number" id="mozliwe_pkt_do_uzyskania" name="mozliwe_pkt_do_uzyskania" required><br><br>
+                    <label for="mozliwe_pkt_do_uzyskania">Możliwe punkty do uzyskania:</label>
+                    <input type="number" id="mozliwe_pkt_do_uzyskania" name="mozliwe_pkt_do_uzyskania" ><br><br>
 
-        <label for="przedmiot">Przedmiot:</label>
-        <input type="text" id="przedmiot" name="przedmiot" required><br><br>
+                    <label for="przedmiot">Przedmiot:</label>
+                    <input type="text" id="przedmiot" name="przedmiot" ><br><br>
 
-        <button type="submit">Dodaj wpis</button>
-    </form>
+                    <button type="submit">Dodaj wpis</button>
+                </form>
+            </td>
+            <td>
+                <form id="DeleteForm">
+                    <label for="wpis_id">Podaj id wpisu</label>
+                    <input type="number" id="wpis_id" name="id_wpisu_do_usuniecia">
+                    <button style="margin: 10%;" type="submit">Usun wpis</button>
+                </form>
+            </td>
+            <td>
+                <form id="UpdateForm">
+
+                </form>
+            </td>
+        </tr>
+    </table>
 
     <p id="status"></p>
 
