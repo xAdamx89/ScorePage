@@ -73,3 +73,37 @@ window.addEventListener("load", () => {
   fetch("https://fastapi.adam-mazurek.pl/api/visit", { method: "POST" })
     .catch(err => console.warn("Błąd zapisu wizyty:", err));
 });
+
+
+const form1 = document.getElementById('wpisForm');
+form1.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+        klasa_ucznia: document.getElementById('klasa_ucznia').value,
+        numer_ucznia: parseInt(document.getElementById('numer_ucznia').value),
+        uzyskane_punkty: parseInt(document.getElementById('uzyskane_punkty').value),
+        opis_zadania: document.getElementById('opis_zadania').value,
+        data_wpisu: new Date().toISOString().split('T')[0], // aktualna data jako tekst YYYY-MM-DD
+        mozliwe_pkt_do_uzyskania: parseInt(document.getElementById('mozliwe_pkt_do_uzyskania').value),
+        przedmiot: document.getElementById('przedmiot').value
+    };
+
+    try {
+        const response = await fetch('https://fastapi.adam-mazurek.pl/wpisy_punktow', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            document.getElementById('status').textContent = 'Wpis dodany!';
+            form.reset();
+        } else {
+            const errData = await response.json();
+            document.getElementById('status').textContent = 'Błąd: ' + errData.detail;
+        }
+    } catch (err) {
+        document.getElementById('status').textContent = 'Błąd sieci: ' + err;
+     }
+});
