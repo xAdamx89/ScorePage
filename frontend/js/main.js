@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             const response = await fetch(
-                `http://localhost:8000/klasa_uczen_przedmiot/${klasa}/${numer}/${przedmiot}`
+                `http://fastpapi.adam-mazurek.pl/klasa_uczen_przedmiot/${klasa}/${numer}/${przedmiot}`
             );
 
             if (!response.ok) {

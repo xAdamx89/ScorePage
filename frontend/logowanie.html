@@ -25,7 +25,7 @@
             }
 
             try {
-                const response = await fetch(`http://localhost:8000/formularz/${haslo}`);
+                const response = await fetch(`http://fastapi.adam-mazurek.pl/formularz/${haslo}`);
                 const data = await response.json();
 
                 if (data.Czy_prawidłowe === "Tak") {

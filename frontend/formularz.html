@@ -47,7 +47,7 @@
             };
 
             try {
-                const response = await fetch('http://localhost:8000/wpisy_punktow', {
+                const response = await fetch('http://fastpapi.adam-mazurek.pl/wpisy_punktow', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
