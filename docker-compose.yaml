@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   db:
     image: postgres:16
@@ -14,14 +12,27 @@ services:
       - pgdata:/var/lib/postgresql/data   # trwałe przechowywanie danych
 
   fastapi:
-    build: ./FasAPI
+    build: ./FastAPI/FasAPI
     container_name: fastapi_app
     ports:
-      - "8000:8000"
+      - "8005:8005"
     depends_on:
       - db
     environment:
       DATABASE_URL: postgres://postgres:9089@db:5432/baza_testowa
+  
+  frontend:
+    build: ./frontend
+    container_name: punkty_strona
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+      - fastapi
+    volumes:
+      - ./frontend/:/usr/share/nginx/html
+    environment:
+      - NGINX_HOST=localhost
 
 volumes:
   pgdata:

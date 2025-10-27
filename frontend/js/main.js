@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             const response = await fetch(
-                `http://localhost:8000/klasa_uczen_przedmiot/${klasa}/${numer}/${przedmiot}`
+                `https://fastapi.adam-mazurek.pl/klasa_uczen_przedmiot/${klasa}/${numer}/${przedmiot}`
             );
 
             if (!response.ok) {
@@ -66,4 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Wystąpił błąd przy pobieraniu danych");
         }
     });
+});
+
+
+window.addEventListener("load", () => {
+  fetch("https://fastapi.adam-mazurek.pl/api/visit", { method: "POST" })
+    .catch(err => console.warn("Błąd zapisu wizyty:", err));
 });
