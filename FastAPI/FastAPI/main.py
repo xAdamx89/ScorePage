@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 import psycopg
 from pydantic import BaseModel
-from datetime import date
+from datetime import datetime, date
 import datetime
 app = FastAPI()
 
