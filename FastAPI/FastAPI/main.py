@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 import psycopg
 from pydantic import BaseModel
 from datetime import datetime, date
-import datetime
 app = FastAPI()
 
 app.add_middleware(
