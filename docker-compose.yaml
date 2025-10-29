@@ -12,7 +12,7 @@ services:
       - pgdata:/var/lib/postgresql/data   # trwałe przechowywanie danych
 
   fastapi:
-    build: ./FastAPI/FasAPI
+    build: ./FastAPI/FastAPI
     container_name: fastapi_app
     ports:
       - "8005:8005"
