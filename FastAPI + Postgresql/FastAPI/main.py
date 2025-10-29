@@ -87,7 +87,7 @@ def klasa_uczen_przedmiot(klasa: str, numer_ucznia: int, przedmiot: str):
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
     
-# Model danych
+# Model danych wpisu punktów
 class WpisPunktow(BaseModel):
     klasa_ucznia: str
     numer_ucznia: int
@@ -141,3 +141,24 @@ async def record_visit(request: Request):
     conn.close()
 
     return {"message": "Visit recorded"}
+
+@app.get("/api/get_lista/{Klasa}/{Przedmiot}")
+async def select(Klasa: str, Przedmiot: str):
+    try:
+        with psycopg.connect(conn_str) as conn:
+            with conn.cursor() as cur:
+                sql = """
+                    SELECT * FROM lista_lekcji
+                    WHERE Klasa = %s AND Przedmiot = %s
+                """
+                cur.execute(sql, (Klasa, Przedmiot))
+                columns = [desc[0] for desc in cur.description]
+                rows = cur.fetchall()
+
+        # Zamiana wyników na listę słowników
+        result = [dict(zip(columns, row)) for row in rows]
+
+        return {"result": result}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
