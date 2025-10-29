@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", async (event) => {
         event.preventDefault(); // blokuje przeładowanie strony
 
-        document.getElementById("lista-napis").innerHTML = "Lista wszystkich wpisów";
+        const listaNapis = document.getElementById("lista-napis");
+        if (listaNapis) {
+            listaNapis.innerHTML = "Lista wszystkich wpisów";
+        } else {
+            console.warn("Nie znaleziono elementu #lista-napis w DOM");
+        }
+
 
         const klasy = Array.from(document.querySelectorAll('input[name^="klasa"]:checked'))
                             .map(el => el.value);
