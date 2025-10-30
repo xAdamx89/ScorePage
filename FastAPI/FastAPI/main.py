@@ -169,7 +169,7 @@ def delete_wpis(wpis_id: int):
         with psycopg.connect(conn_str) as conn:
             with conn.cursor() as cur:
                 # Sprawdź, czy wpis istnieje
-                cur.execute("SELECT ID_wpisu FROM Wpisy_punktow WHERE id = %s;", (wpis_id,))
+                cur.execute("SELECT ID_wpisu FROM Wpisy_punktow WHERE id_wpisu = %s;", (wpis_id,))
                 result = cur.fetchone()
 
                 if not result:
