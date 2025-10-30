@@ -169,14 +169,14 @@ def delete_wpis(wpis_id: int):
         with psycopg.connect(conn_str) as conn:
             with conn.cursor() as cur:
                 # Sprawdź, czy wpis istnieje
-                cur.execute("SELECT id FROM wpisy WHERE id = %s;", (wpis_id,))
+                cur.execute("SELECT ID_wpisu FROM Wpisy_punktow WHERE id = %s;", (wpis_id,))
                 result = cur.fetchone()
 
                 if not result:
                     raise HTTPException(status_code=404, detail="Wpis o podanym ID nie istnieje.")
 
                 # Usuń wpis
-                cur.execute("DELETE FROM wpisy WHERE id = %s;", (wpis_id,))
+                cur.execute("DELETE FROM Wpisy_punktow WHERE ID_wpisu = %s;", (wpis_id,))
                 conn.commit()
 
         return {"message": f"Wpis o ID {wpis_id} został usunięty."}
