@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    //Rejestracja wizyty na stronie
+    fetch("https://fastapi.adam-mazurek.pl/api/visit", { method: "POST" })
+    .catch(err => console.warn("Błąd zapisu wizyty:", err));
 
     const form = document.getElementById("formularz");
     if (!form) return;
 
+    // Formularz selecta Wpisów dla ucznia po przedmiocie i klasy
     form.addEventListener("submit", async (event) => {
         event.preventDefault(); // blokuje przeładowanie strony
 
@@ -106,47 +110,60 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Wysyłanie wizyty do FastAPI
-    fetch("https://fastapi.adam-mazurek.pl/api/visit", { method: "POST" })
-        .catch(err => console.warn("Błąd zapisu wizyty:", err));
 
     // Formularz dodawania wpisu punktów
-    const form1 = document.getElementById('wpisForm');
-    if (form1) {
-        form1.addEventListener('submit', async (e) => {
-            e.preventDefault();
+    document.getElementById("InsertForm").addEventListener("submit", async (e) => {
+        e.preventDefault(); // blokuje standardowe wysłanie formularza
 
-            const data = {
-                klasa_ucznia: document.getElementById('klasa_ucznia').value,
-                numer_ucznia: parseInt(document.getElementById('numer_ucznia').value),
-                uzyskane_punkty: parseInt(document.getElementById('uzyskane_punkty').value),
-                opis_zadania: document.getElementById('opis_zadania').value,
-                data_wpisu: new Date().toISOString().split('T')[0],
-                mozliwe_pkt_do_uzyskania: parseInt(document.getElementById('mozliwe_pkt_do_uzyskania').value),
-                przedmiot: document.getElementById('przedmiot').value
-            };
+        // Pobranie wartości z formularza
+        const klasa_ucznia = document.getElementById("klasa_ucznia").value.trim();
+        const numer_ucznia = parseInt(document.getElementById("numer_ucznia").value, 10);
+        const uzyskane_punkty = parseFloat(document.getElementById("uzyskane_punkty").value);
+        const opis_zadania = document.getElementById("opis_zadania").value.trim();
+        const mozliwe_pkt_do_uzyskania = parseFloat(document.getElementById("mozliwe_pkt_do_uzyskania").value);
+        const przedmiot = document.getElementById("przedmiot").value.trim();
 
-            try {
-                const response = await fetch('https://fastapi.adam-mazurek.pl/wpisy_punktow', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
-                });
+        // Walidacja prostych danych
+        if (!klasa_ucznia || isNaN(numer_ucznia) || isNaN(uzyskane_punkty) || !opis_zadania || isNaN(mozliwe_pkt_do_uzyskania) || !przedmiot) {
+            alert("Proszę wypełnić wszystkie pola poprawnie!");
+            return;
+        }
 
-                if (response.ok) {
-                    document.getElementById('status').textContent = 'Wpis dodany!';
-                    form1.reset();
-                } else {
-                    const errData = await response.json();
-                    document.getElementById('status').textContent = 'Błąd: ' + errData.detail;
-                }
-            } catch (err) {
-                document.getElementById('status').textContent = 'Błąd sieci: ' + err;
+        // Obiekt JSON do wysłania
+        const wpis = {
+            klasa_ucznia,
+            numer_ucznia,
+            uzyskane_punkty,
+            opis_zadania,
+            mozliwe_pkt_do_uzyskania,
+            przedmiot
+        };
+
+        try {
+            const response = await fetch("https://fastapi.adam-mazurek.pl/wpisy_punktow", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(wpis)
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert(data.message);
+                //wyczyść pole numer_ucznia
+                document.getElementById("numer_ucznia").value = "";
+            } else {
+                alert("Błąd: " + data.detail);
             }
-        });
-    }
+        } catch (err) {
+            console.error(err);
+            alert("Wystąpił błąd połączenia z serwerem.");
+        }
+    });
 
-
+    // Formularz usuwania wpisu punktów po ID_wpisu
     document.getElementById("DeleteForm").addEventListener("submit", async (e) => {
         e.preventDefault();
 
