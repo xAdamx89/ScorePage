@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-            const response = await fetch(`http://localhost:8000/delete/${wpisId}`, {
+            const response = await fetch(`https://fastapi.adam-mazurek.pl/delete/${wpisId}`, {
             method: "DELETE",
             });
 
