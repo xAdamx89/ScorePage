@@ -184,3 +184,16 @@ def delete_wpis(wpis_id: int):
     except psycopg.Error as e:
         print("Błąd bazy danych:", e)
         raise HTTPException(status_code=500, detail="Błąd połączenia z bazą danych.")
+
+@app.get("/api/reload_listy")
+def reload_listy():
+    try:
+        with psycopg.connect(conn_str, autocommit=True) as conn:
+            with conn.cursor() as cur:
+                cur.execute("CALL reload_lista_wpisow();")
+        return {"message": "lista_wpisów_lekcji odświeżona"}
+
+
+    except psycopg.Error as e:
+        print("Błąd bazy danych:", e)
+        raise HTTPException(status_code=500, detail="Błąd połączenia z bazą danych.")
