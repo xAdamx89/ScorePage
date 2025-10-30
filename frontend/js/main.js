@@ -146,4 +146,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
+    document.getElementById("DeleteForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const wpisId = document.getElementById("wpis_id").value;
+
+        if (!wpisId) {
+            alert("Podaj ID wpisu do usunięcia!");
+            return;
+        }
+
+        try {
+            const response = await fetch(`http://localhost:8000/delete/${wpisId}`, {
+            method: "DELETE",
+            });
+
+            if (response.ok) {
+            const data = await response.json();
+            alert(data.message);
+            } else {
+            const error = await response.json();
+            alert("Błąd: " + error.detail);
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Wystąpił błąd połączenia z serwerem w DeleteForm.");
+        }
+    });
+
 });
