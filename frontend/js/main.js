@@ -129,6 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        const data_wpisu = new Date().toISOString().slice(0,19);
+
         // Obiekt JSON do wysłania
         const wpis = {
             klasa_ucznia,
@@ -136,7 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
             uzyskane_punkty,
             opis_zadania,
             mozliwe_pkt_do_uzyskania,
-            przedmiot
+            przedmiot,
+            data_wpisu
         };
 
         try {
