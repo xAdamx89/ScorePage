@@ -195,4 +195,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const odswiez = document.getElementById("odswiez_liste");
+    odswiez.addEventListener("click", async (event) => {
+        event.preventDefault(); // opcjonalne, jeśli przycisk w formularzu
+
+        try {
+            const response = await fetch("https://fastapi.adam-mazurek.pl/api/reload_listy", {
+                method: "GET"
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert(data.message); // np. "Lista lekcji została odświeżona"
+            } else {
+                alert("Błąd: " + data.detail);
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Wystąpił błąd połączenia z serwerem.");
+        }
+    });
 });
