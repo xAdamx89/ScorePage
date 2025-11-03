@@ -1,0 +1,1 @@
+CREATE USER adam PASSWORD 'adam';
