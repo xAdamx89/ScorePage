@@ -140,9 +140,8 @@ def dodaj_wpis(wpis: WpisPunktow):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/formularz/logowanie")
-def sprawdz_haslo(haslo: str = Form(...)):
-    return {"Czy_prawidlowe": "Tak" if sprawdz_wpisane_haslo(haslo) else "Nie"}
+def sprawdz_haslo(dane: LoginRequest):
+    return {"Czy_prawidlowe": "Tak" if sprawdz_wpisane_haslo(dane.haslo) else "Nie"}
 
 @app.post("/api/visit")
 async def record_visit(request: Request):
