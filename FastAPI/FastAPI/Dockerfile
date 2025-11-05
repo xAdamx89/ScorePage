@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # Instalacja zależności
-RUN pip install --no-cache-dir fastapi uvicorn psycopg[binary] bcrypt python-dotenv
+RUN pip install --no-cache-dir fastapi uvicorn psycopg[binary] bcrypt python-dotenv python-multipart
 
 # Ustawienie portu
 EXPOSE 8005
