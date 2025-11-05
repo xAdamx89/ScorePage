@@ -14,7 +14,7 @@
     </form>
 
     <script>
-        document.getElementById("loginForm").addEventListener("submit", async (e) => {
+       document.getElementById("loginForm").addEventListener("submit", async (e) => {
         e.preventDefault();
 
         const haslo = document.getElementById("haslo").value.trim();
@@ -33,21 +33,22 @@
                 body: JSON.stringify({ haslo }),
             });
 
-            if (!response.ok) {
-                throw new Error(`Błąd HTTP ${response.status}`);
-            }
-
             const data = await response.json();
 
-            if (data.token) {
-                // ✅ zapisujemy token JWT w localStorage
-                localStorage.setItem("authToken", data.token);
-                window.location.href = "formularz.html";
-            } else if (data.Czy_prawidlowe === "Tak" || data.Czy_prawidłowe === "Tak") {
-                // wersja bez tokena – tylko dla kompatybilności
+            if (!response.ok) {
+                // obsługa błędów HTTP np. 401, 500
+                const komunikat = data.detail || `Błąd HTTP ${response.status}`;
+                alert("❌ " + komunikat);
+                return;
+            }
+
+            // ✅ poprawne logowanie — zapisujemy token
+            if (data.access_token) {
+                localStorage.setItem("authToken", data.access_token);
+                alert("✅ Zalogowano pomyślnie!");
                 window.location.href = "formularz.html";
             } else {
-                alert("❌ Nieprawidłowe hasło!");
+                alert("❌ Nie otrzymano tokena z serwera!");
             }
         } catch (error) {
             console.error("Błąd:", error);
