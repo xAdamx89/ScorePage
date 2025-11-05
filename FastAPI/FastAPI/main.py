@@ -144,6 +144,7 @@ def dodaj_wpis(wpis: WpisPunktow):
 class LoginRequest(BaseModel):
     haslo: str
 
+@app.post("/formularz/logowanie")
 def sprawdz_haslo(dane: LoginRequest):
     return {"Czy_prawidlowe": "Tak" if sprawdz_wpisane_haslo(dane.haslo) else "Nie"}
 
