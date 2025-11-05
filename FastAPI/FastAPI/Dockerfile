@@ -3,11 +3,13 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Kopiujemy pliki projektu
-COPY . /app
+COPY requirements.txt .
 
 # Instalacja zależności
-RUN pip install --no-cache-dir fastapi uvicorn psycopg[binary] bcrypt python-dotenv python-multipart
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Potem kopiujemy resztę plików projektu (łącznie z .env)
+COPY . .
 
 # Ustawienie portu
 EXPOSE 8005
