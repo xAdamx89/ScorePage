@@ -1,8 +1,19 @@
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import OAuth2PasswordRequestForm
+from fastapi.responses import JSONResponse
 import psycopg
 from pydantic import BaseModel
 from datetime import datetime, date
+import os
+from dotenv import load_dotenv()
+
+from pass_gen_hash import sprawdz_wpisane_haslo
+
+load_dotenv()
+
+ADMIN_PASS_HASH = os.getenv("ADMIN_PASS_HASH")
+
 app = FastAPI()
 
 app.add_middleware(
@@ -123,10 +134,10 @@ def dodaj_wpis(wpis: WpisPunktow):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
-@app.get("/formularz/{haslo}")
-def sprawdz_haslo(haslo: str):
-    return {"Czy_prawidłowe": "Tak"} if haslo == "9089" else {"Czy_prawidłowe": "Nie"}
+
+@app.post("/formularz/logowanie")
+def sprawdz_haslo(haslo: str = Form(...)):
+    return {"Czy_prawidlowe": "Tak" if sprawdz_wpisane_haslo(haslo) else "Nie"}
 
 @app.post("/api/visit")
 async def record_visit(request: Request):
