@@ -14,6 +14,11 @@ load_dotenv()
 
 ADMIN_PASS_HASH = os.getenv("ADMIN_PASS_HASH")
 
+if not ADMIN_PASS_HASH:
+    raise SystemExit("Brakuje ADMIN_PASS_HASH w .env")
+else:
+    print(f"Prawidłowo wczytano zmienną z .env: {ADMIN_PASS_HASH}")
+
 app = FastAPI()
 
 app.add_middleware(
