@@ -140,6 +140,10 @@ def dodaj_wpis(wpis: WpisPunktow):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+#Model logowania
+class LoginRequest(BaseModel):
+    haslo: str
+
 def sprawdz_haslo(dane: LoginRequest):
     return {"Czy_prawidlowe": "Tak" if sprawdz_wpisane_haslo(dane.haslo) else "Nie"}
 
