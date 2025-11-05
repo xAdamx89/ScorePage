@@ -4,3 +4,4 @@ psycopg[binary]
 bcrypt
 python-dotenv
 python-multipart
+python-jose[cryptography]

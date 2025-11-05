@@ -8,7 +8,7 @@
 <body style="text-align: center;">
     <h1>Podaj hasło</h1>
     <form id="loginForm">
-        <input id="haslo" type="text" placeholder="Wpisz hasło" style="margin-bottom: 2%;"><br>
+        <input id="haslo" type="password" placeholder="Wpisz hasło" style="margin-bottom: 2%;"><br>
         <input type="submit" value="Zaloguj">
         <input type="button" value="Powrót" onclick="window.location.href='index.html'">
     </form>
@@ -20,7 +20,7 @@
         const haslo = document.getElementById("haslo").value.trim();
 
         if (!haslo) {
-            alert("Podaj hasło!");
+            alert("⚠️ Podaj hasło!");
             return;
         }
 
@@ -28,25 +28,30 @@
             const response = await fetch("https://fastapi.adam-mazurek.pl/formularz/logowanie", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ haslo }) // wysyłamy obiekt JSON
+                body: JSON.stringify({ haslo }),
             });
 
             if (!response.ok) {
-                throw new Error(`Błąd HTTP: ${response.status}`);
+                throw new Error(`Błąd HTTP ${response.status}`);
             }
 
             const data = await response.json();
 
-            if (data.Czy_prawidlowe === "Tak" || data.Czy_prawidłowe === "Tak") {
+            if (data.token) {
+                // ✅ zapisujemy token JWT w localStorage
+                localStorage.setItem("authToken", data.token);
+                window.location.href = "formularz.html";
+            } else if (data.Czy_prawidlowe === "Tak" || data.Czy_prawidłowe === "Tak") {
+                // wersja bez tokena – tylko dla kompatybilności
                 window.location.href = "formularz.html";
             } else {
-                alert("Nieprawidłowe hasło!");
+                alert("❌ Nieprawidłowe hasło!");
             }
         } catch (error) {
             console.error("Błąd:", error);
-            alert("Nie udało się połączyć z serwerem.");
+            alert("🚫 Nie udało się połączyć z serwerem.");
         }
     });
     </script>

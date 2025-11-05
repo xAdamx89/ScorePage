@@ -1,23 +1,33 @@
-from fastapi import FastAPI, HTTPException, Request, Form
+from fastapi import FastAPI, HTTPException, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer
 from fastapi.responses import JSONResponse
 import psycopg
 from pydantic import BaseModel
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 import os
 from dotenv import load_dotenv
+from jose import jwt, JWTError
 
 from pass_gen_hash import sprawdz_wpisane_haslo
 
 load_dotenv()
 
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
 ADMIN_PASS_HASH = os.getenv("ADMIN_PASS_HASH")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES") or 30)
 
 if not ADMIN_PASS_HASH:
     raise SystemExit("Brakuje ADMIN_PASS_HASH w .env")
+elif not ALGORITHM:
+    raise SystemExit("Brakuje ALGORITHM w .env")
+elif not SECRET_KEY:
+    raise SystemExit("Brakuje SECRET_KEY w .env")
+elif not ACCESS_TOKEN_EXPIRE_MINUTES:
+    raise SystemExit("Brakuje ACCESS_TOKEN_EXPIRE_MINUTES w .env")
 else:
-    print(f"Prawidłowo wczytano zmienną z .env: {ADMIN_PASS_HASH}")
+    print(f"Prawidłowo wczytano .env")
 
 app = FastAPI()
 
@@ -32,6 +42,18 @@ app.add_middleware(
 conn_str = "dbname=zsl user=adam password=adam host=db port=5432"
 
 root_conn_str = "dbname=zsl user=postgres password=9089 host=db port=5432"
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/formularz/logowanie")
+
+def get_current_user(token: str = Depends(oauth2_scheme)):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username != "admin":
+            raise HTTPException(status_code=403, detail="Brak uprawnień")
+        return username
+    except JWTError:
+        raise HTTPException(status_code=401, detail="Nieprawidłowy lub wygasły token")
 
 @app.get("/")
 def test():
@@ -114,7 +136,7 @@ class WpisPunktow(BaseModel):
     przedmiot: str
 
 @app.post("/wpisy_punktow")
-def dodaj_wpis(wpis: WpisPunktow):
+def dodaj_wpis(wpis: WpisPunktow, current_user: str = Depends(get_current_user)):
     try:
         # Połączenie z bazą
         with psycopg.connect(conn_str) as conn:
@@ -144,9 +166,48 @@ def dodaj_wpis(wpis: WpisPunktow):
 class LoginRequest(BaseModel):
     haslo: str
 
-@app.post("/formularz/logowanie")
-def sprawdz_haslo(dane: LoginRequest):
-    return {"Czy_prawidlowe": "Tak" if sprawdz_wpisane_haslo(dane.haslo) else "Nie"}
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))
+    to_encode.update({"exp": expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+@app.post("/formularz/logowanie", response_model=TokenResponse)
+async def login(dane: LoginRequest):
+    import bcrypt
+    import os
+    from dotenv import load_dotenv
+    
+    load_dotenv()
+
+    hashed_pass = os.getenv("ADMIN_PASS_HASH")
+
+    if not hashed_pass:
+        raise HTTPException(status_code=500, detail="Brak hasła administratora w konfiguracji serwera")
+
+    if not bcrypt.checkpw(dane.haslo.encode("utf-8"), hashed_pass.encode("utf-8")):
+        raise HTTPException(status_code=401, detail="Nieprawidłowe hasło")
+
+    token = create_access_token({"sub": "admin"})
+
+    return {"access_token": token, "token_type": "bearer"}
+
+def verify_token(token: str):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        return payload
+    except JWTError:
+        raise HTTPException(status_code=401, detail="Nieprawidłowy lub wygasły token")
+
+@app.get("/formularz/verify")
+async def verify(token: str):
+    verify_token(token)
+    return {"status": "ok"}
 
 @app.post("/api/visit")
 async def record_visit(request: Request):
@@ -184,7 +245,7 @@ async def select(Klasa: str, Przedmiot: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.delete("/delete/{wpis_id}")
-def delete_wpis(wpis_id: int):
+def delete_wpis(wpis_id: int, current_user: str = Depends(get_current_user)):
     try:
         with psycopg.connect(conn_str) as conn:
             with conn.cursor() as cur:
