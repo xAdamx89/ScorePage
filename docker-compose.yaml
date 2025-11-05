@@ -18,6 +18,8 @@ services:
       - "8005:8005"
     depends_on:
       - db
+    env_file:
+      - ./FastAPI/FastAPI/.env
     environment:
       DATABASE_URL: postgres://postgres:9089@db:5432/baza_testowa
   
