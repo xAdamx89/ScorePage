@@ -6,7 +6,7 @@ import psycopg
 from pydantic import BaseModel
 from datetime import datetime, date
 import os
-from dotenv import load_dotenv()
+from dotenv import load_dotenv
 
 from pass_gen_hash import sprawdz_wpisane_haslo
 
