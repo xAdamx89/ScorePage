@@ -38,10 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 `https://fastapi.adam-mazurek.pl/klasa_uczen_przedmiot/${klasa}/${numer}/${przedmiot}`
             );
 
-            // Drugi fetch — lista zajęć
-            const response1 = await fetch(
-                `https://fastapi.adam-mazurek.pl/api/get_lista/${klasa}/${przedmiot}`
-            );
+
+            let response1;
+
+            if(klasa !== '5g') {
+                // Drugi fetch — lista zajęć jeżeli nie 5g
+                response1 = await fetch(
+                    `https://fastapi.adam-mazurek.pl/api/get_lista/${klasa}/${przedmiot}`
+                );
+            } else {
+                // Drugi fetch — lista zajęć jeżeli 5g
+                response1 = await fetch(
+                    `https://fastapi.adam-mazurek.pl/api/select_jakie_wpisy/${klasa}/${przedmiot}`
+                );
+            }
 
             if (!response.ok || !response1.ok) {
                 throw new Error("Błąd połączenia z serwerem");
