@@ -278,3 +278,24 @@ def reload_listy():
     except psycopg.Error as e:
         print("Błąd bazy danych:", e)
         raise HTTPException(status_code=500, detail="Błąd połączenia z bazą danych.")
+
+@app.get("/api/select_jakie_wpisy/{Klasa}/{Przedmiot}")
+async def select_jakie_wpisy(Klasa: str, Przedmiot: str):
+    try:
+        with psycopg.connect(conn_str) as conn:
+            with conn.cursor() as cur:
+                sql = """
+                    SELECT * FROM jakie_wpisy_powinny_byc_na_przedmiot
+                    WHERE Klasa = %s AND Przedmiot = %s
+                """
+                cur.execute(sql, (Klasa, Przedmiot))
+                columns = [desc[0] for desc in cur.description]
+                rows = cur.fetchall()
+
+        # Zamiana wyników na listę słowników
+        result = [dict(zip(columns, row)) for row in rows]
+
+        return {"result": result}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
