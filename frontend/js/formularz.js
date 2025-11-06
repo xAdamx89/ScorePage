@@ -11,6 +11,7 @@
     // Formularz dodawania wpisu punktów
     document.getElementById("InsertForm").addEventListener("submit", async (e) => {
         e.preventDefault(); // blokuje standardowe wysłanie formularza
+        console.log("Listener dla formularza podpięty");
 
         // Pobranie wartości z formularza
         const klasa_ucznia = document.getElementById("klasa_ucznia").value.trim();
@@ -74,6 +75,7 @@
     // Formularz usuwania wpisu punktów po ID_wpisu
     document.getElementById("DeleteForm").addEventListener("submit", async (e) => {
         e.preventDefault();
+        console.log("Listener dla formularza podpięty");
 
         const wpisId = document.getElementById("wpis_id").value;
 
@@ -113,6 +115,7 @@
     const odswiez = document.getElementById("odswiez_liste");
     odswiez.addEventListener("click", async (event) => {
         event.preventDefault(); // opcjonalne, jeśli przycisk w formularzu
+        console.log("Listener dla formularza podpięty");
 
         try {
             const response = await fetch("https://fastapi.adam-mazurek.pl/api/reload_listy", {
