@@ -14,9 +14,9 @@
 <input type="button" value="Odśwież liste wpisów" id="odswiez_liste"> 
     <table>
         <tr>
-            <th>Dodaj wpis      </th>
-            <th>Usun wpis       </th>
-            <th>Zmodyfikuj wpis </th>
+            <th>Dodaj wpis                 </th>
+            <th>Usun wpis                  </th>
+            <th>Dodaj wpis do listy wpisów </th>
         </tr>
         <tr>
             <td>
@@ -50,12 +50,31 @@
                 </form>
             </td>
             <td>
-                <form id="UpdateForm">
+                <form id="InsertToListaWpisow">
+                    <label for="klasa_ucznia">Klasa ucznia:</label>
+                    <input type="text" id="klasa_ucznia" name="klasa_ucznia" ><br><br>
 
+                    <label for="numer_ucznia">Numer ucznia:</label>
+                    <input type="number" id="numer_ucznia" name="numer_ucznia" ><br><br>
+
+                    <label for="uzyskane_punkty">Uzyskane punkty:</label>
+                    <input type="number" id="uzyskane_punkty" name="uzyskane_punkty" ><br><br>
+
+                    <label for="opis_zadania">Opis zadania:</label><br>
+                    <textarea id="opis_zadania" name="opis_zadania" rows="3" cols="50" ></textarea><br><br>
+
+                    <label for="mozliwe_pkt_do_uzyskania">Możliwe punkty do uzyskania:</label>
+                    <input type="number" id="mozliwe_pkt_do_uzyskania" name="mozliwe_pkt_do_uzyskania" ><br><br>
+
+                    <label for="przedmiot">Przedmiot:</label>
+                    <input type="text" id="przedmiot" name="przedmiot" ><br><br>
+
+                    <button type="submit">Dodaj wpis</button>
                 </form>
             </td>
-        </tr>
-    </table>
+
+
+        </table>
 
     <p id="status"></p>
 
@@ -126,3 +145,4 @@
     <script src="js/formularz.js"></script>
 </body>
 </html>
+    

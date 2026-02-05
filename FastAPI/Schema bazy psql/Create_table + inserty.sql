@@ -76,3 +76,38 @@ INSERT INTO jakie_wpisy_powinny_byc_na_przedmiot (Klasa, Opis_lekcji, Przedmiot,
 ('5g', 'egzamin 2 ELM.08', 'Azr', 4),
 ('5g', 'egzamin 3 ELM.08', 'Azr', 4),
 ('5g', 'egzamin 4 ELM.08', 'Azr', 4);
+
+-- Inserty dla Azr 4g
+INSERT INTO jakie_wpisy_powinny_byc_na_przedmiot (Klasa, Opis_lekcji, Przedmiot, Mozliwe_pkt_do_uzyskania) VALUES
+('4g', 'Wprowadzenie w MotoSim - Tworzenie modeli', 'Azr', 4),
+('4g', 'Tworzenie wizualizacji podnoszenia bloczku w MotoSim', 'Azr', 4),
+('4g', 'Tworzenie wizualizacji paletyzacji', 'Azr', 4),
+('4g', 'Tworzenie kopii zapasowej w MotoSim', 'Azr', 4),
+('4g', 'Projektowanie stanowiska zrobotyzowanego spawania z robotem Yaskawa HC10', 'Azr', 10);
+
+-- Inserty dla PiER 4g
+INSERT INTO jakie_wpisy_powinny_byc_na_przedmiot (Klasa, Opis_lekcji, Przedmiot, Mozliwe_pkt_do_uzyskania) VALUES
+('4g', 'Pierwsze - ćwiczenie programistyczne w MotoSim', 'PiER', 4),
+('4g', 'Ćw 1 - podr. pdst - pdst. interpolacji w MotoSim', 'PiER', 4),
+('4g', 'Ćw 2 - podr. pdst - Kopia bezpieczeństwa', 'PiER', 4),
+('4g', 'Ćw 3 - podr. pdst - System wykrywania kolizji', 'PiER', 4),
+('4g', 'ćw 4 - podr. pdst - Definicja układu wspł. użytkownika', 'PiER', 4),
+('4g', 'Ćw 5 - podr. pdst - Badanie funckji PL', 'PiER', 4),
+('4g', 'Ćw 6 - podr. pdst - Definicja narzędzia', 'PiER', 4);
+
+-- Inserty dla PPiEP 4g
+INSERT INTO jakie_wpisy_powinny_byc_na_przedmiot (Klasa, Opis_lekcji, Przedmiot, Mozliwe_pkt_do_uzyskania) VALUES
+('4g', 'FFSim - ele. pn. z ELM.08', 'PPiEP', 4),
+('4g', 'Pisanie programu niesekwencyjnego w FBD', 'PPiEP', 4),
+('4g', 'Pisanie programu sekwencyjnego w FBD', 'PPiEP', 4),
+('4g', 'Zaliczenie z pisania w FBD', 'PPiEP', 4),
+('4g', 'Projektowanie sterowania pneumatycznej wiertarki z UiSM cz.2', 'PPiEP', 4),
+('4g', 'Program w FBD sterowania taśmociągiem z ELM.08', 'PPiEP', 4),
+('4g', 'Sprawozdanie z przemysłowej dok. tech', 'PPiEP', 10);
+
+-- Insert dla PRob 4g wykłady
+INSERT INTO jakie_wpisy_powinny_byc_na_przedmiot (Klasa, Opis_lekcji, Przedmiot, Mozliwe_pkt_do_uzyskania) VALUES
+('4g', 'Zeszyt 1', 'PRob', 1),
+('4g', 'Zeszyt 2', 'PRob', 1),
+('4g', 'Kartkówka 1', 'PRob', 23);
+ 
