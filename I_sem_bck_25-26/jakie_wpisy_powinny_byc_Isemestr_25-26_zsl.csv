@@ -1,0 +1,23 @@
+id,klasa,opis_lekcji,przedmiot,mozliwe_pkt_do_uzyskania
+1,5g,Ćw manualne - zaciskanie przewodów,PiER,6
+2,5g,Lua nr 1 - praktyczne zapoznanie,PiER,4
+3,5g,Lua nr 2 - trzy zadania pdst + zaaw,PiER,15
+4,5g,Ćw pierwsze prog Dobota w Lua,PiER,4
+5,5g,paletyzacja Dobotem - prosta,PiER,4
+6,5g,paletyzacja Dobotem - zaawansowane,PiER,4
+7,5g,egzamin 1 ELM.08,PiER,4
+8,5g,egzamin 2 ELM.08,PiER,4
+9,5g,egzamin 3 ELM.08,PiER,4
+10,5g,egzamin 4 ELM.08,PiER,4
+11,5g,sprawozdanie,PiER,10
+12,5g,paletyzacja Dobotem - prosta,Azr,4
+13,5g,paletyzacja Dobotem - zaawansowane,Azr,4
+14,5g,egzamin 1 ELM.08,Azr,4
+15,5g,egzamin 2 ELM.08,Azr,4
+16,5g,egzamin 3 ELM.08,Azr,4
+17,5g,egzamin 4 ELM.08,Azr,4
+18,5g,ćw. prak. egz. nr 1,PiER,4
+19,5g,ćw 1 do egzaminu,PiER,4
+20,5g,ćw 2 do egzaminu,PiER,4
+21,5g,ćw 3 do egzaminu,PiER,4
+22,5g,ćw 4 do egzaminu,PiER,4
